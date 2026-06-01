@@ -1,15 +1,16 @@
-from rest_framework import viewsets
+from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
+from rest_framework.viewsets import ViewSet
 
-from movies.models import Movie
-from movies.serializers import MovieSerializer
+from movies.models import Model
+from movies.serializers import ModelApiSerializer
 
 
-class MovieViewSet(viewsets.ViewSet):
-    # TODO: Task 3.3 - Create list method that returns list of the all movies.
-    # Hint: Return Response object with data from serializer.
+class ModelApiViewSet(ViewSet):
     def list(self, request):
-        # queryset = ...
-        # serializer = ...
+        # TODO: Task 3.3 - Return all Model rows serialized with ModelApiSerializer.
         pass
 
+    def retrieve(self, request, pk=None):
+        # TODO: Task 3.5 - Return one Model by pk; HTTP 404 if missing.
+        pass
