@@ -1,0 +1,22 @@
+{
+  "name": "TSD Tutorial",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces",
+  "forwardPorts": [8000, 5432],
+  "postCreateCommand": "python manage.py migrate",
+  "remoteEnv": {
+    "POSTGRES_HOST": "db",
+    "POSTGRES_PORT": "5432",
+    "POSTGRES_DB": "tutorial",
+    "POSTGRES_USER": "tutorial",
+    "POSTGRES_PASSWORD": "tutorial"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
