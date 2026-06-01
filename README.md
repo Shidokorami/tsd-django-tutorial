@@ -26,11 +26,10 @@ docker compose run --rm app python manage.py migrate
 
 ---
 
-## Submitting your work
+## Working on exercises
 
 1. **Fork** this repository on GitHub.
 2. Clone your fork and do your work there.
-3. Commit and push your changes to your fork.
-4. Share the link to your fork with the instructor or show it during the review session.
-
+or
+3. Create Codespaces
 ---
