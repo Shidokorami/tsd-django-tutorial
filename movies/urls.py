@@ -3,6 +3,8 @@ from rest_framework.routers import DefaultRouter
 from movies.views import MovieViewSet
 
 router = DefaultRouter()
-router.register('movies', MovieViewSet, basename='movie')  # TODO: Task 3.4
+
+# TODO: Task 3.5 - Register MovieViewSet on the router
+# router.register(...)
 
 urlpatterns = router.urls

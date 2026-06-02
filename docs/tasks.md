@@ -27,7 +27,7 @@ docker compose run --rm app pytest movies/tests/test_task1.py -v
 ### Files
 
 - `movies/models.py` — task **2.1**
-- `movies/tasks/task2.py` — tasks **2.2**–**2.7**
+- `movies/tasks/task2.py` — tasks **2.2**–**2.4**
 
 ### Commands
 
@@ -55,8 +55,8 @@ docker compose run --rm app pytest movies/tests/test_task2.py -v
 ### Files
 
 - `movies/serializers.py` — tasks **3.1**, **3.2**
-- `movies/views.py` — task **3.3**
-- `movies/urls.py` — task **3.4**
+- `movies/views.py` — tasks **3.3**, **3.4** (`MovieViewSet`: `list`, `retrieve`)
+- `movies/urls.py` — task **3.5** (`router.register`)
 
 ### Commands
 
