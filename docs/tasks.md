@@ -63,7 +63,7 @@ docker compose run --rm app pytest movies/tests/test_task2.py -v
 ```bash
 docker compose up -d --build
 docker compose run --rm app python manage.py migrate
-docker compose run --rm app python manage.py runserver 0.0.0.0:8000
+docker compose run --rm --service-ports app python manage.py runserver 0.0.0.0:8000
 ```
 
 Open in a browser (required check):
