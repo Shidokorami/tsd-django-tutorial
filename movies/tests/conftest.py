@@ -1,6 +1,6 @@
 import pytest
 
-from movies.models import Model, ParentModel
+from movies.models import Director, Movie
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -14,9 +14,8 @@ def _use_fixtures_only(db):
     """
     Migrations seed demo rows (for dev / Task 3 on database `tutorial`).
 
-    pytest-django uses a separate database (`test_tutorial`). The seed migration
-    runs there too, so we clear tables before each test; fixtures then supply
-    the only rows assertions rely on.
+    pytest-django uses `test_tutorial`. The seed migration runs there too;
+    we clear tables before each test so fixtures supply the only rows under test.
     """
-    Model.objects.all().delete()
-    ParentModel.objects.all().delete()
+    Movie.objects.all().delete()
+    Director.objects.all().delete()
